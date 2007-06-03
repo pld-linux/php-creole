@@ -1,4 +1,5 @@
-Summary:	Creole is a database abstraction layer for PHP5
+Summary:	Creole - a database abstraction layer for PHP5
+Summary(pl.UTF-8):	Creole - warstwa abstrakcji baz danych dla PHP5
 Name:		php-creole
 Version:	1.1.0
 Release:	0.1
@@ -22,6 +23,18 @@ draws from experience with several of these -- noteably PEAR::DB,
 PEAR::MDB, and ADOdb. Creole was created as a subproject of Propel to
 meet specific needs that none of the available abstraction layers were
 able to address in any satisfactory way.
+
+%description -l pl.UTF-8
+Creole to warstwa abstrakcji baz danych dla PHP5. Obudowuje natywne
+specyficzne dla bazy API PHP w celu tworzenia bardziej przenośnego
+kodu, udostępniając programistom przejrzysty, w pełni zorientowany
+obiektowo interfejs oparty luźno na API JDBC Javy.
+
+Istnieje wiele pakietów abstrakcji baz danych dla PHP. Creole czerpie
+z doświadczeń kilku z nich - w szczególności PEAR::DB, PEAR::MDB i
+ADOdb. Powstał jako podprojekt projektu Propel, aby zaspokoić
+specyficzne potrzeby, których żadna z istniejących warstw abstrakcji
+nie była w stanie spełnić w satysfakcjonujący sposób.
 
 %prep
 %setup -q -n creole-%{version}
