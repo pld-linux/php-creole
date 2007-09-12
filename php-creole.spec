@@ -2,7 +2,7 @@ Summary:	Creole - a database abstraction layer for PHP5
 Summary(pl.UTF-8):	Creole - warstwa abstrakcji baz danych dla PHP5
 Name:		php-creole
 Version:	1.1.0
-Release:	0.1
+Release:	1
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://creole.tigris.org/files/documents/996/34244/creole-%{version}.tar.gz
