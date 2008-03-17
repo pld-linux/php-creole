@@ -1,0 +1,11 @@
+--- creole-1.1.0/classes/creole/drivers/mysql/MySQLResultSet.php	2006-02-05 22:25:29.000000000 +0200
++++ creole-1.1.0/classes/creole/drivers/mysql/MySQLResultSet.php	2008-03-17 16:03:05.254283407 +0200
+@@ -122,6 +122,8 @@
+         if (!array_key_exists($column, $this->fields)) { throw new SQLException("Invalid resultset column: " . (is_int($column) ? $column + 1 : $column)); }
+         if ($this->fields[$column] === null) { return null; }
+         
++        if ($this->fields[$column] == '0000-00-00 00:00:00')
++        	return 943912800;
+         $ts = strtotime($this->fields[$column]);
+         if ($ts === -1 || $ts === false) { // in PHP 5.1 return value changes to FALSE
+             // otherwise it's an ugly MySQL timestamp!
