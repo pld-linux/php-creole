@@ -2,11 +2,12 @@ Summary:	Creole - a database abstraction layer for PHP5
 Summary(pl.UTF-8):	Creole - warstwa abstrakcji baz danych dla PHP5
 Name:		php-creole
 Version:	1.1.0
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://creole.tigris.org/files/documents/996/34244/creole-%{version}.tar.gz
 # Source0-md5:	4d9f44b42403b91aaecf247da41cecf1
+Patch0:		%{name}-nullts.patch
 URL:		http://creole.phpdb.org/
 Requires:	php-pear
 BuildArch:	noarch
@@ -38,6 +39,7 @@ nie była w stanie spełnić w satysfakcjonujący sposób.
 
 %prep
 %setup -q -n creole-%{version}
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
