@@ -1,3 +1,5 @@
+# TODO
+# - package pear .registry
 Summary:	Creole - a database abstraction layer for PHP5
 Summary(pl.UTF-8):	Creole - warstwa abstrakcji baz danych dla PHP5
 Name:		php-creole
@@ -9,6 +11,7 @@ Source0:	http://creole.tigris.org/files/documents/996/34244/creole-%{version}.ta
 # Source0-md5:	4d9f44b42403b91aaecf247da41cecf1
 Patch0:		%{name}-nullts.patch
 URL:		http://creole.phpdb.org/
+Requires:	php-common >= 4:5.0
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
